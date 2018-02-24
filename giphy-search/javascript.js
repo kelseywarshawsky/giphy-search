@@ -30,8 +30,15 @@ $("#add-subject").on("click", function(event) {
                             giphDiv.append(giphImage);
                             $("#gifs-appear-here").prepend(giphDiv);
 
-                            var state = $(this).attr("data-state");
+                        }
+                    });
 
+                })
+
+                $(".gif").on("click", function() {
+                    var state = $(this).attr("data-state");
+
+                            var state = $(this).attr("data-state");
                             if (state === "still") {
                                 $(this).attr("src", $(this).attr("data-animate"));
                                 $(this).attr("data-state", "animate");
@@ -40,8 +47,7 @@ $("#add-subject").on("click", function(event) {
                                 $(this).attr("data-state", "still");
                             }
 
-                        }
+                        })
 
 
-                    });
-            });
+                
