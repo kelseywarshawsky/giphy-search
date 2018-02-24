@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" type="text/css" href="assets/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Article Search API</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12 jumbotron center" style="border-style:solid;border-color:black;border-weight:1px;background:pink">
+
+                <h1 class="display-4" style="text-align:center">
+                    Giphy Searcher </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card col-md-12" style="border-style:solid;border-color:black;border-weight">
+                <h5 class="card-header">Giphy Search</h5>
+                <div class="card-body">
+
+                    <form>
+                        <div class="form-group">
+                            <label for="search">Make a new Giphy Button!</label>
+                            <input type="text" class="form-control" id="search" aria-describedby="search" placeholder="Beautiful gif ideas...">
+                            <button class="btn btn-default" id="add-subject" type="submit">Submit</button>
+                        </div>
+                    </form>
+
+                    <div class="row">
+
+                        <div class="card col-md-4" id="buttons">
+                            <button class="btn-lg info" data-giph="Kitties">Kitties</button>
+                            <button class="btn-lg info" data-giph="Puppies">Puppies</button>
+                            <button class="btn-lg info" data-giph="Butterflies">Butterflies</button>
+                            <button class="btn-lg info" data-giph="Miyazaki">Miyazaki</button>
+                            <button class="btn-lg info" data-giph="Pusheen">Pusheen</button>
+                            <button class="btn-lg info" data-giph="Pizza">Pizza</button>
+                            <button class="btn-lg info" data-giph="Love">Love</button>
+                            <button class="btn-lg info" data-giph="Emma Stone">Emma Stone</button>
+                        </div>
+
+                        <div class="card col-md-8">
+                            <div class="card-body" id="gifs-appear-here">
+                                <img src="assets/images/pusheen.jpg">
+                            </div>
+                        </div>
+
+
+
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                        <script src="javascript.js">
+                        </script>
+</body>
+
+</html>
